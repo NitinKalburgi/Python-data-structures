@@ -12,7 +12,7 @@ class Stack():
     def pop(self):
         if len(self.stack) < 0:
             return None
-        return self.stack.pop(0)
+        return self.stack.pop(-1)
 
     #To display the stack
     def display(self):
