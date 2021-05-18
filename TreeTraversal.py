@@ -1,3 +1,4 @@
+#Define a class node, to create node
 class Node():
 
     def __init__(self, item):
@@ -5,18 +6,21 @@ class Node():
         self.right = None
         self.item = item
 
-
+#Inorder operation
 def inorder(root):
         if root:
             inorder(root.left)
             print(str(root.item) + "->", end = ' ')
             inorder(root.right)
+
+#Preorder operation
 def preorder(root):
         if root:
             print(str(root.item) + "->", end = " ")
             preorder(root.left)
             preorder(root.right)
 
+#Postorder operation
 def postorder(root):
         if root:
             postorder(root.left)
